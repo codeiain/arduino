@@ -1,5 +1,9 @@
 sudo: false
 language: ruby
+cache:
+  directories:
+   - /home/travis/arduino_ci_ide/arduino
+   - /home/travis/Arduino/libraries/arduino
 script:
    - bundle install
    - bundle exec arduino_ci_remote.rb
